@@ -105,6 +105,12 @@ def main():
         )
     """
 
+    # create_unique_users_table = """
+    #     CREATE TABLE IF NOT EXISTS users (
+    #         id SERIAL PRIMARY KEY,      # this will be unique, because it's primary key
+    #         name TEXT NOT NULL UNIQUE,  # this will be unique, because it's got unique constraint
+    # """
+
     create_posts_table = """
         CREATE TABLE IF NOT EXISTS posts (
             id SERIAL PRIMARY KEY,
